@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="modal">
+        <div class="modal-content">
+            <form id="book-form">
+                <p>Title:</p><input type="text" id="book-title" placeholder="" required>
+                <p>Author:</p><input type="text" id="book-author" placeholder="" required>
+                <p>Pages:</p><input type="number" id="book-pages" placeholder="" required>
+                <button type="submit">CREATE</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="header">
+        <h1 id="head">LIBRARY</h1>
+    </div>
+
+    <div id="main">
+
+        <div id="new-book-slot">
+            <button id="open-modal-button"><svg id="new-book-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg></button>
+        </div>
+        <div class="slot">
+            <p class='book-title'>Descolonizando Afetos</p>
+            <p class="book-author">por Geni Nuzes</p>
+            <p class="book-pages">188 páginas</p>
+            <div class="book-buttons">
+                <button class='book-status-button'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                </svg></button>
+                <button class='book-delete-button'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+                </svg></button>
+            </div>
+        </div>
+        <div class="slot">
+            <p class='book-title'>Descolonizando Afetos</p>
+            <p class="book-author">por Geni Nuzes</p>
+            <p class="book-pages">188 páginas</p>
+            <div class="book-buttons">
+                <button class='book-status-button'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                </svg></button>
+                <button class='book-delete-button'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+                </svg></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

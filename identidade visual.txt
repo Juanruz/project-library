@@ -1,0 +1,22 @@
+identidade visual.txt
+
+Paleta de cores 
+    10:
+    30:
+    60:
+
+Tipografia
+    Titulo: 700. 64px, Merriweather
+    Subtitulo: 600, 20px, Merriweather
+    Corpo: 400, 16px, Open Sans
+    [Peso, tamanho, familia]
+
+Enfim, agora preciso:
+1. Definir cores
+2. Fazer com que o CHECK mude:
+    1. A cor do svg
+    2. Status
+3. Fazer com que o DEL apague aquele slot e remova livro do array
+4. Criar funcao que adiciona livro no array
+5. Criar modal
+    1. BLABLABLALBALBLA

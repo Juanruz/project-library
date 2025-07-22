@@ -1,0 +1,219 @@
+/* Universais (0,0,0) */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tags, pseudoclasses e conjunto de seletores gerais (0,0,1) */
+
+body {
+  font-family: Helvetica, sans-serif, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 158px 1fr;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #000000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: #000000;
+    transition: fill 0.5s ease;
+}
+
+svg.active {
+  fill: rgb(255, 255, 255);
+}
+
+#header, #new-book-slot, .slot, button {
+  background-color: #0B7A75;
+}
+
+/* Classes e atributos gerais (0,1,0) */ 
+
+.hidden {
+  display: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+/* IDs e !important gerais (1,0,0) */
+
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* escurece o fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* garante que fique por cima */
+}
+
+.modal-content {
+  background-color: #0B7A75;
+  padding: 32px 0px 68px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  height: 260px;
+  width: 270px;
+  display: grid;
+}
+
+#book-form {
+  display: grid;
+  grid-template-rows: repeat(7,1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#book-form p {
+  align-self: self-end;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#book-form input {
+  align-self: self-start;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 32px;
+  width: 128px;
+  background-color: #000000;
+  color: antiquewhite;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+}
+
+#book-form button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  height: 32px;
+  width: 112px;
+  transform: translateY(16px);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Header */ 
+
+#header {
+  width: 1198px;
+  justify-self: center;
+  align-content: center;
+  border: 1px solid #000000;
+  border-top: none;
+}
+
+#head {
+  text-align: center;
+}
+
+/* Main */
+#main {
+  width: 1200px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-content: start;
+}
+
+/* New Book */
+#new-book-slot {
+  height: 398px;
+  width: 298px;
+  border: 1px solid #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#open-modal-button {
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+}
+
+#new-book-svg {
+  width: 64px;
+  height: 64px;
+  fill: black;
+}
+
+/* Slots */
+.slot {
+  height: 398px;
+  width: 298x;
+  border: 1px solid #000000;
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-rows: 160px 20px 60px 160px; /* 4 linhas */
+}
+
+.book-title {
+  grid-row: 1 / 2;
+  justify-self: center;
+  align-self: self-end;
+  font-size: 20px;
+}
+
+.book-author {
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+
+.book-pages {
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: self-start;
+  transform: translateY(8px);
+  font-size: 12px;
+}
+
+.book-buttons {
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-self: self-start;
+  transform: translateY(96px);
+}
+
+.book-status-button {
+  grid-column: 1 / 2;
+  justify-self: end;
+}
+
+.book-delete-button {
+  grid-column: 2 / 3;
+  justify-self: start;
+}
