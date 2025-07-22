@@ -53,6 +53,13 @@ bookForm.addEventListener('submit', (e) => {
   modal.classList.add('hidden'); // Passo 7 — Fecha modal
 });
 
+  //Fecha modal com esc
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      modal.classList.add('hidden');
+    }
+  });
+
 // Funcao que cria o slot (HTML)
 function createSlot(book){
   const container = document.getElementById('main');
